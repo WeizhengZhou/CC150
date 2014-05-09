@@ -1,5 +1,10 @@
 package ch01;
-
+/**
+ * three solutions to the problem 1.1
+ * @author Weizheng Zhou
+ * @version 1.1
+ * 
+ */
 import java.util.Hashtable;
 import java.util.Arrays;
 
@@ -44,12 +49,23 @@ public class Problem_1_1 {
 		}
 		return true;
 	}
+	public boolean isUnique_Bit(String s){
+		int checker = 0;
+		for(int i=0;i<s.length();i++){
+			int val = s.charAt(i) - 'a';//let a occupy the first bit of checker
+			if((checker & (1 << val)) > 0)
+				return false;
+			checker = checker | (1 << val);
+		}
+		return true;
+	}
 	public static void main(String[] args){
 		Problem_1_1 prob = new Problem_1_1();
-		String s = "abcdef";
+		String s = "abcdefe";
 //		System.out.println(prob.isUnique_Hashtable(s));
 //		System.out.println(prob.isUnique_Array(s));
-		System.out.println(prob.isUnique_Sort(s));
+//		System.out.println(prob.isUnique_Sort(s));
+		System.out.println(prob.isUnique_Bit(s));
 	}
 
 }
