@@ -21,5 +21,4 @@ public class Problem_2_3 {
 		Node.print(head);
 	}
 
-
 }
