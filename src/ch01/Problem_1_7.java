@@ -35,5 +35,4 @@ public class Problem_1_7 {
 		System.out.println(Arrays.deepToString(res));
 		
 	}
-
 }
