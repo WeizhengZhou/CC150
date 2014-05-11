@@ -87,7 +87,7 @@ public class Problem_2_7 {
 		//base case
 		if(curRight.next == null){
 			if(curResult.left.value == curRight.value)
-				//left node should move one step rigthward
+				//left node should move one step rightward
 				return new Result(curResult.left.next,true);
 			else
 				return new Result(curResult.left.next,false);
