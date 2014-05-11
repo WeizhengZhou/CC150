@@ -32,7 +32,7 @@ public class Problem_2_4 {
 				}
 				largeTail.next = null;
 			}
-			n=next;		
+			n = next;		
 		}
 		
 		//Concatenate small with large

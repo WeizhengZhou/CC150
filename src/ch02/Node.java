@@ -23,6 +23,7 @@ public class Node {
 		}
 		return head;
 	}
+
 	public static void print(Node head){
 		while(head != null){
 			System.out.print(head.value + ", ");
