@@ -176,8 +176,6 @@ public class BinaryTree {
 		else
 			return Math.max(height(root.left), height(root.right)) + 1;
 	}
-
-	
 	public static void main(String[] args){
 		String[] s = new String[]{"1","2","3","#","4","5","6","#","#","#","7"};
 		BinaryTree bt = new BinaryTree(s);
